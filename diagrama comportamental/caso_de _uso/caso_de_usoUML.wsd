@@ -1,0 +1,33 @@
+@startuml
+title Carrito de Compras
+
+actor Persona
+actor User as Comprador
+actor Administrator as Administrador
+
+Persona <|-- Comprador
+Persona <|-- Administrador
+
+package "Sistema Carrito de Compras" as SC {
+    usecase "Buscar Producto" as UC1
+    usecase "Agregar al Carrito" as UC2
+    usecase "Realizar Pago" as UC3
+    usecase "Generar Factura" as UC4
+    usecase "Gestionar Inventario" as UC5
+    usecase "detalle factura" as UC6
+}
+
+Comprador --> UC1
+Comprador --> UC2
+Comprador --> UC3
+UC3 --> UC6
+Administrador --> UC5
+UC4 --> UC6
+
+UC5 --> UC4
+
+database "Base de Datos" as DB
+DB <--> SC
+
+
+@enduml
