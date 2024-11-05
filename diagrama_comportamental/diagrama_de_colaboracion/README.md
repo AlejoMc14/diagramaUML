@@ -1,4 +1,4 @@
-Explicación
+## Explicación
 Flujo de Interacciones: Este diagrama muestra cómo los componentes se comunican entre sí para completar una compra.
 Componentes Clave:
 GUI: Interfaz gráfica del usuario que interactúa directamente con el comprador.
@@ -6,6 +6,10 @@ Sistema Carrito de Compras: Procesa las solicitudes de la GUI y administra las i
 Base de Datos (DB): Consulta y actualiza datos, como la disponibilidad de productos y el inventario.
 Pago: Responsable del proceso de pago y validación de información.
 Factura: Genera y envía la confirmación de la compra al comprador.
+
+
+## construccion del codigo en plantUML
+
 sql´´´
 @startuml
 title Colaboración - Carrito de Compras
@@ -37,4 +41,5 @@ GUI --> Comprador : Mostrar confirmación de compra
 @enduml
 
 
+## Diagrama 
 ![diagrama](/diagrama_comportamental/diagrama_de_colaboracion/diagrama.png)

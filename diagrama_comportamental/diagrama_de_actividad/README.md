@@ -1,4 +1,4 @@
-Explicación del Diagrama
+## Explicación del Diagrama
 Inicio y Selección de Producto: El proceso comienza con la selección de un producto.
 Verificación de Disponibilidad: Se verifica si el producto está disponible.
 Si el producto está disponible, se muestran los detalles y el usuario puede agregarlo al carrito.
@@ -8,6 +8,10 @@ Si el comprador decide proceder al pago, el sistema valida el método de pago.
 Si el pago es exitoso, se genera una factura y se envía la confirmación de compra.
 Si el pago falla, se notifica al usuario.
 Continuar Comprando: Si el comprador decide no proceder al pago, puede continuar seleccionando productos.
+
+
+## construccion del codigo en plantUML
+
 sql´´´
 @startuml
 title Diagrama de Actividad - Proceso de Compra en Carrito de Compras
@@ -41,4 +45,5 @@ endif
 stop
 @enduml
 
+## Diagrama 
 ![diagrama](/diagrama_comportamental/diagrama_de_actividad/diagrama.png)

@@ -1,4 +1,4 @@
-Explicación
+## Explicación
 Actores y Componentes:
 
 Comprador representa al usuario que interactúa con el sistema.
@@ -10,6 +10,10 @@ Flujo de la Secuencia:
 El Comprador selecciona un producto, y el Sistema obtiene los detalles de la Base de Datos.
 Luego, el Comprador agrega el producto al carrito, lo que actualiza el inventario en la base de datos.
 Finalmente, el Comprador procede al pago, y el sistema registra la factura en la base de datos y confirma la compra al usuario.
+
+
+## construccion del codigo en plantUML
+
 ´´´sql
 
 @startuml
@@ -40,6 +44,7 @@ UI --> Comprador: Mostrar Confirmación y Factura
 
 @enduml
 
+## Diagrama 
 ![diagrama secuencial](/diagrama_comportamental/diagrama_secuencial/diagrama.png)
 
 

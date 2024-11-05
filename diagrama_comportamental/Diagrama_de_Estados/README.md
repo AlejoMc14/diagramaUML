@@ -1,4 +1,4 @@
-Explicación de los Estados
+## Explicación de los Estados
 Disponible: El estado inicial del producto, indicando que está disponible para el comprador.
 Seleccionado: El producto es seleccionado por el comprador para ver más detalles.
 Agregado al Carrito: El comprador agrega el producto al carrito.
@@ -6,6 +6,9 @@ En Proceso de Pago: El comprador decide proceder al pago y el sistema comienza e
 Pago Exitoso: El pago se completa con éxito.
 Pago Fallido: El pago es rechazado; el sistema vuelve al estado de Seleccionado para permitir un reintento.
 Confirmado: El producto ha sido comprado con éxito, se genera una factura, y el proceso finaliza.
+
+## construccion del codigo en plantUML
+
 sql´´´
 @startuml
 title Diagrama de Estado - Proceso de Compra en Carrito de Compras
@@ -24,4 +27,6 @@ Confirmado --> [*] : Fin del proceso
 PagoFallido --> Seleccionado : Reintentar proceso de pago
 
 @enduml
+
+## Diagrama 
 ![diagrama](/diagrama_comportamental/Diagrama_de_Estados/diagrama.png)
