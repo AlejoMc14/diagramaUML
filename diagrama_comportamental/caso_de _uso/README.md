@@ -49,4 +49,5 @@ DB <--> SC
 
 ## Diagrama de casos uso
 
-![casos de uso](\out\caso_de_usoUML)
+![casos de uso](/diagrama_comportamental/caso_de%20_uso/out/caso_de_usoUML/caso_de_usoUML.png)
+
