@@ -1,4 +1,4 @@
-Explicación del Diagrama de Tiempos
+## Explicación del Diagrama de Tiempos
 Componentes:
 
 Comprador (C): El cliente que interactúa con el sistema.
@@ -15,6 +15,8 @@ Eventos:
 @20: El pago es exitoso y el sistema genera una factura.
 @25: La interfaz de usuario confirma la compra, y la base de datos guarda la factura.
 @30: Todos los componentes vuelven a estar inactivos al finalizar el proceso de compra.
+
+## construccion del codigo en plantUML
 sql´´´
 @startuml
 title Diagrama de Tiempos - Proceso de Compra en Carrito de Compras
@@ -64,5 +66,5 @@ DB is "Inactivo" #LightGray
 P is "Inactivo" #LightGray
 
 @enduml
-
+## diagrama
 ![diagrama](/diagrama_comportamental/Diagrama_de_timing/diagrama.png)
