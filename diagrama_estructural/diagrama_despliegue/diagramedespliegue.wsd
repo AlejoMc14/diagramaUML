@@ -1,0 +1,5 @@
+@startuml
+node Cliente { [Navegador Web] –> ServidorApp }
+node ServidorApp { [Sistema Carrito de Compras] Sistema –> Servidor : consultas SQL }
+node Servidor { [Base de Datos] }
+@enduml

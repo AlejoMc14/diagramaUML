@@ -1,0 +1,37 @@
+@startuml
+package “Perfil de Sistema de Carrito de Compras” {
+class Usuario <<Perfil>> {
++ idUsuario: int
++ nombre: String
++ rol: String
++ email: String
++ password: String
+}
+class Producto <<Perfil>> {
++ idProducto: int
++ nombre: String
++ descripcion: String
++ precio: float
+}
+class Inventario <<Perfil>> {
++ idInventario: int
++ cantidad: int
++ idProducto: int
+}
+class Factura <<Perfil>> {
++ idFactura: int
++ fecha: Date
++ total: float
++ idUsuario: int
+}
+1
+class DetalleFactura <<Perfil>> {
++ idDetalleFactura: int
++ cantidad: int
++ subtotal: float
++ idFactura: int
++ idProducto: int
+}
+}
+Usuario – Factura : crea Factura – DetalleFactura : contiene Producto – Inventario : está en Producto – DetalleFactura : incluye
+@enduml

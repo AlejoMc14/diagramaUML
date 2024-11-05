@@ -1,0 +1,36 @@
+@startuml package “Sistema de Carrito de Compras” {
+component "Interfaz " {
+[Vista de Productos]
+[Carrito de Compras]
+[Gestión de Usuario]
+[Confirmación de Pedido]
+}
+component "Backend " {
+[ServicioUsuario]
+[ServicioProducto]
+[ServicioFactura]
+[ServicioInventario]
+[ServicioDetalleFactura]
+}
+component "Base de Datos " {
+[Usuario]
+[Producto]
+[Inventario]
+[Factura]
+[DetalleFactura]
+}
+component "Autenticación " {
+[Validación de Usuario]
+[Generador de Tokens]
+}
+component "Servidor Web " {
+[Distribución de Archivos]
+1
+[Proxy Reverso]
+}
+"Interfaz " -down-> "Backend " : Peticiones REST
+"Backend " -down-> "Base de Datos " : Operaciones CRUD
+"Autenticación " -left-> "Backend " : Control de Acceso
+"Servidor Web " -down-> "Interfaz " : Distribución de Archivos Estáticos
+"Servidor Web " -down-> "Backend " : Proxy Reverso
+} @enduml

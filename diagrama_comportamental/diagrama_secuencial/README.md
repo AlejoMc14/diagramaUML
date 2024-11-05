@@ -28,4 +28,6 @@ UI --> Comprador: Mostrar Confirmación y Factura
 
 @enduml
 
-![diagrama secuencial](/out/diagrama_comportamental/diagrama_secuencial/codigo/codigo.png)
+![diagrama secuencial](/diagrama_comportamental/diagrama_secuencial/diagrama.png)
+
+
