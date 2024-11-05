@@ -1,3 +1,11 @@
+Explicación
+Flujo de Interacciones: Este diagrama muestra cómo los componentes se comunican entre sí para completar una compra.
+Componentes Clave:
+GUI: Interfaz gráfica del usuario que interactúa directamente con el comprador.
+Sistema Carrito de Compras: Procesa las solicitudes de la GUI y administra las interacciones con la base de datos y el módulo de pago.
+Base de Datos (DB): Consulta y actualiza datos, como la disponibilidad de productos y el inventario.
+Pago: Responsable del proceso de pago y validación de información.
+Factura: Genera y envía la confirmación de la compra al comprador.
 sql´´´
 @startuml
 title Colaboración - Carrito de Compras

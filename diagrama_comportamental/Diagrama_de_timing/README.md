@@ -1,3 +1,20 @@
+Explicación del Diagrama de Tiempos
+Componentes:
+
+Comprador (C): El cliente que interactúa con el sistema.
+Interfaz de Usuario (UI): La interfaz a través de la cual el comprador interactúa.
+Sistema Carrito (SC): Gestiona el carrito y la lógica de procesamiento de pedidos.
+Base de Datos (DB): Almacena la información de los productos y la factura.
+Pago (P): Verifica y procesa el pago.
+Eventos:
+
+@0: El comprador comienza a seleccionar un producto.
+@5: El comprador agrega el producto al carrito, y el sistema comienza a procesarlo.
+@10: El sistema actualiza el inventario en la base de datos.
+@15: El comprador procede al pago, y el sistema inicia la verificación del pago.
+@20: El pago es exitoso y el sistema genera una factura.
+@25: La interfaz de usuario confirma la compra, y la base de datos guarda la factura.
+@30: Todos los componentes vuelven a estar inactivos al finalizar el proceso de compra.
 sql´´´
 @startuml
 title Diagrama de Tiempos - Proceso de Compra en Carrito de Compras
